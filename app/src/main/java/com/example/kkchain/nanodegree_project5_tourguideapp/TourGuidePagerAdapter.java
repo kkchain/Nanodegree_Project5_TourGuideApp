@@ -18,13 +18,17 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position){
         if (position == 0) {
             return new ShopFragment();
-        } else {
+        } else if (position == 1) {
             return new FoodFragment();
+        }  else if (position == 2) {
+            return new PlayFragment();
+        } else {
+            return new ParksFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 }
