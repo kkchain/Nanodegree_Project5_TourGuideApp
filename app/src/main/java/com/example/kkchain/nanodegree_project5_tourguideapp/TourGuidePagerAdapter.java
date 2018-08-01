@@ -1,5 +1,6 @@
 package com.example.kkchain.nanodegree_project5_tourguideapp;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,12 +16,12 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public Fragment getItem(int position){
+    public Fragment getItem(int position) {
         if (position == 0) {
             return new ShopFragment();
         } else if (position == 1) {
             return new FoodFragment();
-        }  else if (position == 2) {
+        } else if (position == 2) {
             return new PlayFragment();
         } else {
             return new ParksFragment();
@@ -30,5 +31,19 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 4;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        if (position == 0) {
+            return "SHOP";
+        } else if (position == 1) {
+            return "FOOD";
+        } else if (position == 2) {
+            return "PLAY";
+        } else {
+            return "PARKS";
+        }
     }
 }
