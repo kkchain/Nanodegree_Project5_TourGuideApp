@@ -6,6 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -23,7 +26,20 @@ public class ShopFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shop, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_shop, container, false);
+
+        final ArrayList <ListItem> listItems = new ArrayList<ListItem>();
+
+        listItems.add(new ListItem("Mall Name", "Mall Address"));
+        listItems.add(new ListItem("Mall Name2", "Mall Address2"));
+
+        // Create a link to Listview and apply adapter
+        ListAdapter adapter = new ListAdapter(this, listItems);
+        ListView listV = findViewById(R.id.shop_listView);
+        listV.setAdapter(adapter);
+
+        return rootView;
+
     }
 
 }
