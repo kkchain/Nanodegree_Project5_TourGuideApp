@@ -11,10 +11,9 @@ import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter <ListItem> {
 
-
-
     public ListAdapter(Context context, ArrayList<ListItem> listItems) {
         super(context, 0, listItems);
+
     }
 
     @Override
@@ -22,18 +21,17 @@ public class ListAdapter extends ArrayAdapter <ListItem> {
         // Check if an existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_list_view, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.activity_list_view, parent, false);
         }
 
         ListItem currentList = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID song_text_view.
-        TextView tourTextView = listItemView.findViewById(R.id.shop_name);
-        tourTextView.setText(currentList.getTheShopName());
+        TextView t1 = listItemView.findViewById(R.id.shop_name);
+        t1.setText(currentList.getTheShopName());
 
-        TextView tourTextView2 = listItemView.findViewById(R.id.shop_address);
-        tourTextView2.setText(currentList.getTheShopAddress());
+        TextView t2 = listItemView.findViewById(R.id.shop_address);
+        t2.setText(currentList.getTheShopAddress());
 
         return listItemView;
     }

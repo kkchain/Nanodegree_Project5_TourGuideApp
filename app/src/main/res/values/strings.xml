@@ -2,5 +2,6 @@
     <string name="app_name">Nanodegree_Project5_TourGuideApp</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_name">Pearland Town Center</string>
+    <string name="shop_address">Corner of HWY 288  FM518\n Pearland TX, 77584 </string>
 </resources>
