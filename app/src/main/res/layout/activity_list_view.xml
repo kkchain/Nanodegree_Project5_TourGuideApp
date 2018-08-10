@@ -7,19 +7,39 @@
     android:orientation="vertical"
     tools:context=".ListViewActivity">
 
-    <TextView
-        android:id="@+id/shop_name"
+    <ImageView
+        android:id="@+id/photo"
+        android:src="@drawable/play_kid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-        android:text="shop name"/>
+        android:paddingTop="10dp"/>
 
     <TextView
-        android:id="@+id/shop_address"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="shop address"/>
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="address"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="phone"/>
 
 </LinearLayout>

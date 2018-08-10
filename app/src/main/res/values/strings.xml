@@ -1,7 +1,39 @@
 <resources>
-    <string name="app_name">Nanodegree_Project5_TourGuideApp</string>
+    <string name="app_name">Your Guides to Pearland, Tx</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="shop_name">Pearland Town Center</string>
     <string name="shop_address">Corner of HWY 288  FM518\n Pearland TX, 77584 </string>
+    <string name="shop_phone">Phone: 713.340.0712</string>
+
+    <string name="shop2_name">at Home Store</string>
+    <string name="shop2_address">3000 Kirby Dr, Pearland, TX 77584</string>
+    <string name="shop2_phone">Hour: Monday-Sunday 9AM-9PM </string>
+
+    <string name="food_name">Super Bowl Asian Cuisine Tea House</string>
+    <string name="food_address">4310 Bailey Rd #106, Pearland, TX 77584</string>
+    <string name="food_special">Chef Recommend: Bubble Tea, Taiwan Style Popcorn Chicken,
+                                Tonkatsu ramen, Curry Rice</string>
+
+    <string name="food2_name">Krispy Creme Donuts</string>
+    <string name="food2_address">11450 Broadway St, Pearland, TX 77584</string>
+    <string name="food2_hour">Hour: Monday-Sunday 6AM-11PM</string>
+
+    <string name="play_name">Kids n Play</string>
+    <string name="play_address">9515 Broadway St #101, Pearland, TX 77584</string>
+    <string name="play_hour">Hour: Monday-Sunday 10AM-7PM</string>
+
+    <string name="play2_name">Krispy Creme Donuts</string>
+    <string name="play2_address">2620 Cullen Blvd #118, Pearland, TX 77581</string>
+    <string name="play2_special">Indoor recreation center filled with inflatable animals and
+                                           slides, plus a video arcade and party room.</string>
+
+    <string name="park_name">Morgan Road Par</string>
+    <string name="park_address">3131 Morgan Rd, Pearland, TX 77584</string>
+    <string name="park_special">Nice playground and a small baseball field</string>
+
+    <string name="park2_name">Centennial Park</string>
+    <string name="park2_address">3219 McLean Rd, Pearland, TX 77584</string>
+    <string name="park2_hour">Hour: Monday-Sunday 6AM-10PM</string>
+
 </resources>

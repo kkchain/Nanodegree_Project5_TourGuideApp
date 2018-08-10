@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Fragment that displays "Shop"
  */
 public class ShopFragment extends Fragment {
 
@@ -30,7 +30,10 @@ public class ShopFragment extends Fragment {
 
         final ArrayList <ListItem> listItems = new ArrayList<ListItem>();
 
-        listItems.add(new ListItem(R.string.shop_name,R.string.shop_address));
+        listItems.add(new ListItem(R.string.shop_name,R.string.shop_address,R.string.shop_phone,
+                R.drawable.shop_pearlandtowncenter));
+        listItems.add(new ListItem(R.string.shop2_name,R.string.shop2_address,R.string.shop2_phone,
+                R.drawable.shop_athome));
 
 
         // Create a link to Listview and apply adapter
