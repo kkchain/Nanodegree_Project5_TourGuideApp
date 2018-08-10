@@ -1,5 +1,6 @@
 package com.example.kkchain.nanodegree_project5_tourguideapp;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,8 +12,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class TourGuidePagerAdapter extends FragmentPagerAdapter {
 
-    public TourGuidePagerAdapter(FragmentManager fm) {
+    private Context mContext;
+
+    public TourGuidePagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -33,17 +37,18 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
         return 4;
     }
 
+    //getPageTitle returns string resource associated with a fragment according to it position
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return "SHOP";
+            return mContext.getString(R.string.tab_shop);
         } else if (position == 1) {
-            return "FOOD";
+            return mContext.getString(R.string.tab_food);
         } else if (position == 2) {
-            return "PLAY";
+            return mContext.getString(R.string.tab_play);
         } else {
-            return "PARKS";
+            return mContext.getString(R.string.tab_parks);
         }
     }
 }

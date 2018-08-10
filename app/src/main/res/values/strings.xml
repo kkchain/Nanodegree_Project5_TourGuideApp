@@ -36,4 +36,9 @@
     <string name="park2_address">3219 McLean Rd, Pearland, TX 77584</string>
     <string name="park2_hour">Hour: Monday-Sunday 6AM-10PM</string>
 
+    <string name="tab_shop">SHOP</string>
+    <string name="tab_food">FOOD</string>
+    <string name="tab_play">PLAY</string>
+    <string name="tab_parks">PARKS</string>
+
 </resources>
